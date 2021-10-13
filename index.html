@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamalesh | UI/UX Designer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1767e91850.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- Home section -->
+    <header id="home">
+        <div class="container">
+            <!-- <h1 class="logo">Kamalesh</h1> -->
+            <nav id="main">
+                <ul>
+                    <li><a href="index.html">Home </a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-content">
+            <h1>I Am Kamal The
+            <span class="txt-type" data-wait="3000" data-words='["Front End Devloper","Photography","Photo Editor"]'
+            ></span>
+            </h1>
+            <p class="know"> I Specalize In Front End And Photography And Also photoediting</p>
+            <a href="about.html" class="btn">View More</a>
+        </div>            
+        </div>
+    </header>
+        
+     <!-- Home section-b -->
+    <section id="home-b" style="text-align: center;"> 
+        <div class="container">
+            <h1 class="spec-title">I SPECIALIZE IN</h1>
+            <div class="bottom-line"></div>
+
+            <p class="specalize-para">
+                Photography as well as creating digital masterpieces and Front End layouts for websites and mobile applications.
+            </p>
+
+            <div class="speclize">
+                <i class="fas fa-file-alt fa-2x icons-spec"></i>
+                <h3>CONCEPTING</h3>
+                <p>User experience (UX) design is the process design teams use to create products that provide and relevant experiences to users. This involves the design of the entire process of acquiring and integrating the product, including aspects of branding, design, usability and function.User Interface. When it comes to UI and UX, they are often confused and used interchangeably...</p>
+            </div>
+
+            <div class="speclize">
+                <i class="fas fa-desktop fa-2x icons-spec"></i>
+                <h3>UI/UX</h3>
+                <p> UI/UX is the interaction and experience users have with a company's products and services. ... User interface (UI) is the specific asset users interact with. For example, UI can deal with traditional concepts like visual design elements such as colors and typography.The difference between User Interface (UI) and User Experience (UX) is that UI refers to the people interact with a product.</p>
+            </div>
+
+            <div class="speclize">
+                <i class="fas fa-object-ungroup fa-2x icons-spec"></i>
+                <h3>VISUAL DESGIN</h3>
+                <p>User interface (UI)/ experience (UX) designers are responsible for the “look and feel” of a website, app, or other product. In other words, they're the ones who add colors, pair typefaces, and set layouts. UI/UX designers work exclusively on the web,print like a graphic designer.Visual design is about implementing text, colors, and images in a way that enhances a design or interaction.</p>
+            </div>
+
+            <div class="speclize">
+                <i class="fas fa-thumbs-up fa-2x icons-spec"></i>
+                <h3>INTERACTION</h3>
+                <p>The behavior of any resource is based on its client-server interaction. ... When a user enters a website address in a browsers a corresponding request is sent to the server, then some content is displayed on the screen in response. This is the front-end.Interaction design can be understood in simple(but not simplified)is the design of the interaction between users and products.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Home Section-C -->
+
+    <section id="home-c" style="text-align: center;">
+        <div class="container">
+            <h2 class="title">My Creative Process</h2>
+            <div class="bottom-line"></div>
+            <p class="process-para">
+                All Of My Designs and projects are based of a practiced formula to get the result that i am looking for
+            </p>
+            <div class="process">
+                <div>
+                <i class="fas fa-file-alt fa-4x process-icon">
+                  <div class="process-step">1</div>
+                </i>
+                <h3>Discuss The Projects</h3>
+                <p class="Process-paragraph">A web project is the process of developing and creating a Web site, activities in a network which are aimed at a pre-defined goal of me.</p>
+                </div>
+
+                <div>
+                    <i class="fas fa-desktop fa-4x process-icon">
+                      <div class="process-step">2</div>
+                    </i>
+                    <h3>Brainstorming ^ Concepts</h3>
+                    <p class="Process-paragraph">It is a method using which numerous ideas can be collected from a group of people in a short time.It also provides a discussions and communication during the entire project's duration.</p>
+                </div>
+
+                <div>
+                    <i class="fas fa-object-ungroup fa-4x process-icon">
+                      <div class="process-step">3</div>
+                    </i>
+                    <h3>UI/UX Planning</h3>
+                    <p class="Process-paragraph">UX/UI design is the process by which digital products are imbued with creativity.. Few people realize how different UX design is from design in marketing. </p>
+                </div>
+
+                <div>
+                    <i class="fas fa-thumbs-up fa-4x process-icon">
+                      <div class="process-step">4</div>
+                    </i>
+                    <h3>Interaction</h3>
+                    <p class="Process-paragraph">Interaction design is about presentation and functional behaviors. This is where the interface designer merges with aspects of experience design to become an interaction designer. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Home-Footer -->
+    <footer id="main-footer">
+        <div class="footer-content">
+            <p>Copyrights &copy; 2021. All Rights Are Reserved</p>
+            <div class="social-icon">
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+    </footer>
+    
+        <!-- SCRIPT SECTION -->
+
+    <script>
+
+        // Type Writter Stuffs //
+
+        class TypeWriter {
+    constructor(txtElement, words, wait = 3000) {
+      this.txtElement = txtElement;
+      this.words = words;
+      this.txt = '';
+      this.wordIndex = 0;
+      this.wait = parseInt(wait, 10);
+      this.type();
+      this.isDeleting = false;
+    }
+  
+    type() {
+      const current = this.wordIndex % this.words.length;
+      const fullTxt = this.words[current];
+  
+      if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+      }
+      this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+  
+      let typeSpeed = 300;
+  
+      if (this.isDeleting) {
+        typeSpeed /= 2;
+      }
+  
+      if (!this.isDeleting && this.txt === fullTxt) {
+        typeSpeed = this.wait;
+        this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.wordIndex++;
+        typeSpeed = 500;
+      }
+  
+      setTimeout(() => this.type(), typeSpeed);
+    }
+  }
+  
+  document.addEventListener('DOMContentLoaded', init);
+  
+  function init() {
+    const txtElement = document.querySelector('.txt-type');
+    const words = JSON.parse(txtElement.getAttribute('data-words'));
+    const wait = txtElement.getAttribute('data-wait');
+    new TypeWriter(txtElement, words, wait);
+  }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+}
+#home{
+    background: url(Images/showcase.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    /* color: #fff; */
+}
+
+.container{
+    max-width: 1280px;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+#main{
+    display: flex;
+    padding: 20px;
+    justify-content: right;
+    padding-top: 1.5rem;
+    /* float: right; */
+
+}
+
+#main ul{
+    display: flex;
+}
+
+#main li{
+    padding: 15px 25px;
+    list-style: none;
+    
+}
+
+#main a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.5s;
+    padding-bottom: 10px;
+    font-weight: 500;
+    
+}
+
+li.current{
+    border-color: orange;
+}
+
+#main a:hover{
+    border-color: orange;
+    color: whitesmoke;
+}
+
+.header-content{
+    text-align: center;
+    padding-top: 12%;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.header-content h1{
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+.header-content p{
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px;
+    line-height: 2.5;
+    width: 160px;
+    height: 40px;
+    margin-top: 30px;
+    background-color: #fff;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    text-align:center ;
+    letter-spacing: 2px;
+}
+
+.btn{
+    font-weight: 700;
+}
+.btn:hover{
+    background-color:orange;
+    transition: all 0.5s;
+}
+
+span.txt-type{
+    color: rgb(255, 190, 71);
+}
+
+h1.logo{
+    line-height: 0;
+    margin-top: 20px;
+}
+
+.speclize{
+    margin-top: 40px;
+    padding: 10px;
+}
+
+.icons-spec{
+    color: orange;
+}
+.spec-title{
+    font-size: 22px;
+    display: block;
+    padding: 5px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.speclize h3{
+    line-height: 2;
+}
+
+.specalize-para{
+    padding: 10px;
+}
+.title{
+    font-size: 22px;
+    display: block;
+    padding: 5px;
+    font-weight: 700;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.bottom-line{
+    height: 2px;
+    width: 5rem;
+    background-color: orange;
+    display: block;
+    margin: 0 auto 1rem auto;
+    margin-top: 5px;
+}
+
+.process{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
+    text-align: center;
+}
+
+.process-step{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 28px;
+    background-color: orange;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    line-height: 15px;
+    padding: 10px;
+    transition: all 1s;
+}
+
+.process-icon{
+    position: relative;
+    border-radius: 50%;
+    background-color: black;
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 1s;
+    margin-top: 20px;
+}
+h3{
+    margin-top: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.process-icon:hover{
+    background-color: orange;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+}
+.process-step:hover{
+    background-color: black;
+}
+
+.process-step{
+    background-color: orange;
+    
+}
+
+#main-footer{
+    background-color: black;
+    height: 5rem;
+    color: #fff;
+    margin-top: 70px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+}
+
+.footer-content p{
+    margin-top: 20px;
+    float: left;
+    margin-left: 30px;
+    letter-spacing: 1px;
+}
+
+.fab{
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding: 9px;
+    margin-top: 20px;
+    margin-right: 1rem;
+    float: right;
+}
+
+.fab:hover{
+    background-color: orange;
+}
+
+/* About-Section */
+
+#about{
+    background: url(Images/showcase.jpg) no-repeat 20% 30% /cover;
+    height:5.5rem;
+    border-bottom: 3px solid orange;
+}
+
+.tell{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.my-img{
+    width: 450px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    float: left;
+    margin-top: 30px;
+    grid-area: my-img;
+    margin-left: 50px;
+}
+
+.info{
+    display: grid;
+    grid-template-areas:'my-img bio bio-me';
+    grid-gap: 1.2rem;
+    margin-right: 100px;
+}
+
+.bio-title{
+    text-transform: uppercase;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+.bio-me{
+    border-left: 3px solid orange;
+}
+.bio-me p{
+    text-transform: capitalize;
+    padding: 10px;
+    font-size: 17px;
+    margin: 10px 0;
+}
+.bio-me{
+    background: whitesmoke;
+    width:600px;
+    height: 200px;
+    float: right;
+    margin-top: 80px;
+}
+
+#about-c{
+    background: rgb(39, 36, 36);
+    margin-top: 100px;
+    color: #fff;
+}
+
+.progress{
+    background: black ;
+    overflow: hidden;
+    height: 20px;
+    border-radius: 5px;
+    margin-bottom: 18px;
+}
+
+.progress > div{
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    background-color: orange;
+}
+
+.tech-title{
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.pg-bar{
+    margin: 8px;  
+}
+
+/* CONTACT SECTION */
+
+#contact{
+    background: url(Images/showcase.jpg) no-repeat 20% 30% /cover;
+    height:5.5rem;
+    border-bottom: 3px solid orange;
+}
+
+.contact-title{
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+.contact-para{
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.text-form{
+    display: grid;
+    grid-template-areas: 
+    'name email'
+    'phone subject'
+    'message message';
+    grid-gap: 1.2rem;
+    margin-bottom: 1.2rem;
+    margin-top: 30px;
+}
+
+.name-input{
+    grid-area: name;
+}
+
+.email-input{
+    grid-area: email;
+}
+
+.phone-input{
+    grid-area:phone;
+}
+
+.subject-input{
+    grid-area: subject;
+}
+
+.message-input{
+    grid-area: message;
+    height: 120px;
+}
+
+.text-input{
+    padding: 0.5rem 1rem;
+}
+
+.btn-sub{
+    width: 50%;
+    height: 35px;
+    background-color: black;
+    color: #fff;
+    border: none; 
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.btn-sub:hover{
+    background-color: orange;
+    transition: all 1s;
+}
+
+.contact-info{
+    background: rgb(39, 36, 36);
+    color: #fff;
+    margin-top: 30px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    height: 180px;
+    
+}
+
+.contact-icons{
+    margin-top: 30px;
+    color: orange;
+}
+
+div h3{
+    letter-spacing: 1px;
+}
+
+#contact-d{
+    background: orange;
+    height: 180px;
+    margin-top: 30px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.finish h1{
+    margin-top: 60px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+
+   /* MEDIA QUERIES */
+
+@media(max-width:800px){
+    #home{
+        height: 30rem;
+    }
+    .header-content{
+        padding-top: 3rem;
+    }
+
+    .my-img{
+        width: 300px;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+        float: left;
+    }
+
+    .bio-me{
+        width: 360px;
+        
+    }
+    
+    .bio-me h4{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .bio-me p{
+        font-size: 14px;
+    }
+
+    
+}
+ 
+@media(max-width:500px){
+    #main{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    li{
+        padding: 1rem;
+    }
+    .header-content h1{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    #home{
+        border-bottom: 2px solid orange;
+
+    }
+
+    #home-b .speclize,
+    #home-c .process,
+    #about-b .info,
+    #contact-c .contact-info{
+        grid-template-columns: 1fr;
+    }
+
+    .my-img{
+        width: 250px;
+        height: 160px;
+        background-position: center;
+        background-size: cover;
+        float: left;
+    }
+
+    .info{
+        grid-template-areas: 
+         'my-img'
+         'bio-me';
+    }
+    
+    .bio-me{
+        width: 340px;
+        padding-bottom: 10px;
+        
+    }
+    
+    .bio-me h4{
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .bio-me p{
+        font-size: 14px;
+    }
+    
+    .text-form{
+       grid-template-areas:
+        'name'
+        'subject'
+        'email'
+        'phone'
+        'message';
+    }
+
+     .contact-info p{
+        border-bottom: 1px solid #555;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    } 
+    .contact-info{
+        height: 490px;
+    }
+
+    #contact-d{
+        height: 300px;
+        border-radius: 50px;
+        margin-top: 75px;
+    }
+
+    .finish h1{
+        font-size:35px;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    #main-footer{
+        height: 8rem;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        padding: 8px;
+        height: 3rem;
+    }
+    
+    .footer-content p{
+        font-size: 15px;
+        margin-right: 30px;
+    }
+
+
+}
