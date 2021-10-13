@@ -6,7 +6,7 @@
     font-family: 'Dosis', sans-serif;
 }
 #home{
-    background: url(Images/showcase.jpg);
+    background: url(showcase.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -244,7 +244,7 @@ h3{
 /* About-Section */
 
 #about{
-    background: url(Images/showcase.jpg) no-repeat 20% 30% /cover;
+    background: url(showcase.jpg) no-repeat 20% 30% /cover;
     height:5.5rem;
     border-bottom: 3px solid orange;
 }
@@ -327,7 +327,7 @@ h3{
 /* CONTACT SECTION */
 
 #contact{
-    background: url(Images/showcase.jpg) no-repeat 20% 30% /cover;
+    background: url(showcase.jpg) no-repeat 20% 30% /cover;
     height:5.5rem;
     border-bottom: 3px solid orange;
 }
